@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>School Library Availability Checker</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <!-- Replace src with your actual logo image if available -->
+            <img src="School-logo.jpg" alt="School Logo" onerror="this.style.display='none'">
+            <h1>Library Book Availability</h1>
+        </div>
+        <p class="student-name">Project by: Nelson Perculiar</p>
+    </header>
+
+    <main>
+        <input type="text" id="search" placeholder="Search by title or author...">
+        <table id="book-table">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Books will be inserted here by JavaScript -->
+            </tbody>
+        </table>
+        <p id="last-updated"></p>
+    </main>
+
+    <footer>
+        <p>&copy; Pinnacle African Institute. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
