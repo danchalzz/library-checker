@@ -13,17 +13,34 @@
             <img src="School-logo.jpg" alt="School Logo" onerror="this.style.display='none'">
             <h1>Library Book Availability</h1>
         </div>
-        <p class="student-name">Project by: Nelson Perculiar</p>
+        <p class="student-name">Project by: Nelson Peculiar</p>
     </header>
 
     <main>
-        <input type="text" id="search" placeholder="Search by title or author...">
+        <div id="announcements-container">
+    <!-- Announcements will be inserted here -->
+       </div>
+       <div id="loading-indicator" style="display: none; text-align: center; padding: 20px;">
+    <div class="spinner"></div>
+    <p>Loading books and announcements...</p>
+    </div>
+        <div class="filters">
+    <input type="text" id="search" placeholder="Search by title or author...">
+    <select id="category-filter">
+        <option value="all">All Categories</option>
+    </select>
+    <button id="clear-filters" class="btn">Clear Filters</button>
+    <button id="dark-mode-toggle" class="btn">🌙 Dark Mode</button>
+</div>
+    <!-- Categories will be filled dynamically by JavaScript -->
+</select>
         <table id="book-table">
             <thead>
                 <tr>
                     <th>Title</th>
                     <th>Author</th>
                     <th>Status</th>
+                    <th>Request</th>
                 </tr>
             </thead>
             <tbody>
@@ -31,10 +48,12 @@
             </tbody>
         </table>
         <p id="last-updated"></p>
+        
     </main>
 
     <footer>
         <p>&copy; Pinnacle African Institute. All rights reserved.</p>
+        
     </footer>
 
     <script src="script.js"></script>
